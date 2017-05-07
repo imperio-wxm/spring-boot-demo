@@ -26,6 +26,9 @@ public class ApplicationTests {
         Assert.assertEquals("spring boot demo", properties.getTitle());
         Assert.assertEquals("wxm for spring boot demo", properties.getDesc());
 
+        System.out.println(properties.getHost());
+        System.out.println(properties.getPort());
+
         System.out.println("随机参数：");
         System.out.println("随机字符串 : " + properties.getValue());
         System.out.println("随机int : " + properties.getNumber());

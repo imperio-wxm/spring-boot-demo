@@ -20,6 +20,8 @@ public class Properties {
     private Long bignumber;
     private Integer test1;
     private Integer test2;
+    private String host;
+    private Integer port;
 
     @Override
     public String toString() {
@@ -32,6 +34,8 @@ public class Properties {
                 ", bignumber=" + bignumber +
                 ", test1=" + test1 +
                 ", test2=" + test2 +
+                ", host='" + host + '\'' +
+                ", port=" + port +
                 '}';
     }
 
@@ -97,5 +101,21 @@ public class Properties {
 
     public void setTest2(Integer test2) {
         this.test2 = test2;
+    }
+
+    public String getHost() {
+        return host;
+    }
+
+    public void setHost(String host) {
+        this.host = host;
+    }
+
+    public Integer getPort() {
+        return port;
+    }
+
+    public void setPort(Integer port) {
+        this.port = port;
     }
 }
