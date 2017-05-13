@@ -21,8 +21,8 @@ public class GlobalExceptionHandler {
         exception.setMessage(e.getMessage());
         exception.setCode(response.getStatus());
         exception.setUrl(request.getRequestURL().toString());
-        exception.setData("data");
-        exception.setSuccess(true);
+        exception.setData(e.getData());
+        exception.setSuccess(e.getSuccess());
         return exception;
     }
 }

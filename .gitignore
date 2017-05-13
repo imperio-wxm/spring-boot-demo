@@ -18,3 +18,5 @@ demo-1/springboot-profile\.iml
 \.idea/
 
 demo-3/demo-3\.iml
+
+demo-3/target/

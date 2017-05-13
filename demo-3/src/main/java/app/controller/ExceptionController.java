@@ -12,7 +12,7 @@ public class ExceptionController {
 
     @RequestMapping("/exception")
     public String json() throws ExceptionBase {
-        throw new ExceptionBase("发生错误2");
+        throw new ExceptionBase("发生错误2",true,"测试信息");
     }
 
     @RequestMapping("/hello")
