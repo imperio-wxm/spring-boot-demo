@@ -1,17 +1,14 @@
-package pojo;
-
-import org.springframework.stereotype.Component;
+package app.pojo;
 
 /**
  * Created by wxmimperio on 2017/5/13.
  */
-@Component
 public class NewException<T> {
 
     private Boolean success;
     private String message;
     private String url;
-    private Long code;
+    private Integer code;
     private T data;
 
     @Override
@@ -57,11 +54,11 @@ public class NewException<T> {
         this.url = url;
     }
 
-    public Long getCode() {
+    public Integer getCode() {
         return code;
     }
 
-    public void setCode(Long code) {
+    public void setCode(int code) {
         this.code = code;
     }
 }
