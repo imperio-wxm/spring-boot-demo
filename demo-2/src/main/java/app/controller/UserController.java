@@ -1,7 +1,7 @@
-package controller;
+package app.controller;
 
 import org.springframework.web.bind.annotation.*;
-import pojo.User;
+import app.pojo.User;
 
 import java.util.ArrayList;
 import java.util.List;

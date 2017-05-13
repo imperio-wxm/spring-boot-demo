@@ -1,6 +1,6 @@
 
 import app.Application;
-import controller.UserController;
+import app.controller.UserController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
