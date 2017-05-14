@@ -36,16 +36,16 @@ public class JdbcTemplateTest {
             for (int i = 0; i < 10; i++) {
                 Random rand = new Random();
                 User user = new User();
-                user.setName("测试姓名=" + i);
+                user.setName("test name=" + i);
                 user.setAge(i);
                 int gender = rand.nextInt(2);
                 if (gender == 1) {
-                    user.setGender("女");
+                    user.setGender("girl");
                 } else {
-                    user.setGender("男");
+                    user.setGender("boy");
                 }
                 userDao.add(user);
-                userDao.deleteByName("测试姓名=5");
+                userDao.deleteByName("test name=5");
             }
             List<User> allList = userDao.getAllList();
             System.out.println(allList);
