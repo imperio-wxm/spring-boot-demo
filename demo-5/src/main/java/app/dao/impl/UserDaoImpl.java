@@ -22,7 +22,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public void add(User user) throws Exception {
-        String sql = "insert into user(name,age,gender) valuse(?,?,?)";
+        String sql = "insert into user(name,age,gender) VALUES (?,?,?)";
         jdbcTemplate.update(sql, user.getName(), user.getAge(), user.getGender());
     }
 
